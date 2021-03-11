@@ -21,7 +21,7 @@ function App() {
 
     const jsonResponse = await response.json();
 
-    if (jsonResponse) {
+    if (jsonResponse && jsonResponse.metadata.count>0) {
       const { features, metadata, bbox } = jsonResponse;
 
       setFeaturesState(features);
@@ -30,10 +30,14 @@ function App() {
       return jsonResponse;
     }
   }
+ 
 
   useEffect(() => {
     fetchData();
   }, []);
+
+  // if(jsonResponse.metadata.count>0){}
+  // else{}
 
   return (
     <div className="App">

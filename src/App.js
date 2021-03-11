@@ -52,30 +52,6 @@ function App() {
       })}
     </div>
   );
-
-  // if (error) {
-  //   return <div className="App">Doesnt work to fetch API: {error.message}</div>;
-  // } else if (!isLoaded) {
-  //   return <div className="App">Loading...</div>;
-  // } else if (items) {
-  //   console.log(items);
-  //   return (
-  //     <div className="App">
-  //       <h1>{items.metadata.title}</h1>
-  //       <p>Number of earthquakes: {items.metadata.count}</p>
-  //       <p>Location: {items.features[0].properties.place}</p>
-  //       <p>Magnitude: {items.features[0].properties.mag}</p>
-  //       <p>Time: {items.features[0].properties.time}</p>
-  //     </div>
-  //   );
-  // } else {
-  //   console.log(items);
-  //   return (
-  //     <div className="App">
-  //       <h1>There has been no earthquakes in the past hour.</h1>
-  //     </div>
-  //   );
-  // }
 }
 
 export default App;
